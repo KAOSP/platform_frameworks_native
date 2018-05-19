@@ -85,6 +85,7 @@ cc_defaults {
 cc_defaults {
     name: "egl_libs_defaults",
     defaults: ["gl_libs_defaults"],
+    vendor_available: true,
     cflags: [
         "-DLOG_TAG=\"libEGL\"",
     ],
@@ -151,6 +152,7 @@ cc_test {
 cc_defaults {
     name: "gles_libs_defaults",
     defaults: ["gl_libs_defaults"],
+    vendor_available: true,
     arch: {
         arm: {
             instruction_set: "arm",
